@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vue js tutorial</title>
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+            <!-- <h2>{{greet('morning')}}</h2> -->
+            <!-- <a @click.prevent="click" v-bind:href="website">The ninja</a><br>
+            <input type="text" :value="name" />
+            <a :href="website">The ninja</a>
+            <p>Name: {{name}}</p>
+            <p>Job: {{job}}</p>
+            <p v-html="websiteTag"></p>
+            <button v-on:click="age++">add a year</button>
+            <button v-on:click="age--">subtract a year</button>
+            <p>My age is {{age}}</p>
+            <button @click.once="add(1)">add a year</button> --> <!-- even if there is no value is required to pass then also with empty() works for those where values are predefined in function -->
+            <!-- <button v-on:click="subtract(1)">subtract a year</button>
+            <button @dblclick="add(10)">add 10 year</button> --> <!-- @ is the shorthand for v-on -->
+            <!-- <button v-on:dblclick="subtract(10)">subtract 10 year</button>
+            <p>My age is {{age1}}</p>
+            <div id="canvas" v-on:mousemove="updateXY">({{X}},{{Y}})</div>
+            <label>Name:</label>
+            <input type='text' v-model='name1' />
+            <span>{{name1}}</span>
+            <label>Age:</label>
+            <input type='text' @keyup.alt.enter="logAge" /> -->
+            <!-- <button v-on:click="a++">add a</button>
+            <button v-on:click="b++">add b</button>
+            <p>a -> {{a}}</p>
+            <p>b -> {{b}}</p>
+            <p>Age: {{age2}}</p>
+            <p>age + a = {{addToA}}</p>
+            <p>age + b = {{addToB}}</p> -->
+            <!-- <p>Example1</p>
+                <div @click="available=!available" v-bind:class="{available:available}">
+                    <span>Ryu</span>
+                </div>
+            <p>Example2</p>
+                <button @click="nearby=!nearby">toggle nearby</button>
+                <button @click="available=!available">toggle available</button>
+                <div v-bind:class="compClasses">
+                    <span>Ryu</span>
+                </div> -->
+                <!-- <button v-on:click="error=!error">toggle error</button>
+                <button v-on:click="success=!success">toggle success</button>
+                <p v-if="error">there has been an error</p>
+                <p v-else-if="success">SUCCESS</p>
+                <p v-show="error">there has been an error</p>
+                <p v-show="success">SUCCESS</p> -->
+                <!-- <ul>
+                    <li v-for="(character,index) in characters">{{index}}.{{character}}</li>
+                </ul>
+                <ul>
+                    <li v-for="(ninja,index) in ninjas">{{index}}.{{ninja.name}}-{{ninja.age}}</li>
+                </ul>
+                <template v-for="(ninja,index) in ninjas">
+                    <h3>{{index}}.{{ninja.name}}</h3>
+                    <p>{{ninja.age}}</p>
+                </template> -->
+                <!-- <template v-for="ninja in ninjas">
+                    <div v-for="(value,key) in ninja">
+                        <p>{{key}}-{{value}}</p>
+                    </div>
+                </template> -->
+
+                <!-- bag image -->
+                <!-- <div id="bag" v-bind:class="{burst:ended}"></div> -->
+                <!-- bag health -->
+                <!-- <div id="bag-health">
+                    <div v-bind:style="{width:health+'%'}"></div>
+                </div> -->
+                <!-- game controls -->
+                <!-- <div id="controls">
+                    <button @click="punch" v-show="!ended">punch</button>
+                    <button @click="restart">restart</button>
+                </div> -->
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
